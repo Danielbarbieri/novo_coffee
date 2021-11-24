@@ -1,19 +1,40 @@
-$secondary: #f37907
-$primary: #12dd12
-$orange: #ff9204
-$pink: #ff04de
+// $secondary: #f37907
+// $primary: #12dd12
+// $orange: #ff9204
+// $pink: #ff04de
 
-$font: 30px	
+// $font: 30px	
 
-.button
-	border-radius: 10px
-	appearance: none
-	padding: 5px
-	&:hover
-		background-color: $pink
-	&--primary
-		background-color: $primary
+// .button
+// 	border-radius: 10px
+// 	appearance: none
+// 	padding: 5px
+// 	&:hover
+// 		background-color: $pink
+// 	&--primary
+// 		background-color: $primary
 
-.container
-	background-color: $pink
-	font-size: $font
+// .wrapper
+// 	background-color: $primary
+// 	font-size: $font
+
+@charset "utf-8"
+
+// ==========================================================================
+// Abstract
+//
+
+:root
+    @each $name, $color in $webfatorial-colors
+    --color-#{$name}: #{$color}
+
+    @each $name, $color in $dpw-colors
+    --color-#{$name}: #{$color}
+
+    @each $name, $color in $social-media-colors
+    --color-#{$name}: #{$color}
+
+    
+    
+@use "base/elements"
+
