@@ -1,0 +1,21 @@
+.button {
+  border-radius: 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 5px;
+}
+
+.button:hover {
+  background-color: #ff04de;
+}
+
+.button--primary {
+  background-color: #12dd12;
+}
+
+.container {
+  background-color: #ff04de;
+  font-size: 30px;
+}
+/*# sourceMappingURL=index.css.map */
